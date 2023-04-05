@@ -1,15 +1,18 @@
-
-import React from 'react'
 import Card from './Card'
 
-export default props=>(
-    <Card Title='Sorteio de um  numeros' Purple>
-        <div>
-            <span>
-                <span>Resultado:</span>
-                <strong>2</strong>
-                
-            </span>
-        </div>
-    </Card>
-)
+export default props =>{
+
+    const {min, max} = props
+    const aleatorio = parseInt(Math.random() * (max-min) + min)
+
+    return(
+        <Card title='Sortei de um Números' Purple>
+            <div>
+                <span>
+                    <span>Sorteio</span>
+                    <strong>{aleatorio}</strong>
+                </span>
+            </div>
+        </Card>
+    )
+}
