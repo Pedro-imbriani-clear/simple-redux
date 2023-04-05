@@ -1,18 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import Card from './componentes/Card';
+import Media from './componentes/Media';
+import Intervalo from './componentes/Intervalo';
+import Soma from './componentes/Soma';
+import Sorteio from './componentes/Sorteio';
+
 
 function App() {
   return (
     <div className="App">
       <h1>Exercicio React-Redux (Simples)</h1>
       <div className='linha'>
-        <Card Title='Card 1' Red>x </Card>
-        <Card Title='Card 2' Green>x </Card>
+        <Intervalo ></Intervalo>
+       
       </div>
       <div className='linha'>
-        <Card Title='Card 3'Blue>y </Card>
-        <Card Title='Card 4'Purple>y </Card>
+      <Media></Media>
+        <Soma></Soma>
+        <Sorteio></Sorteio>
       </div>
     </div>
   );
