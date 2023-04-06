@@ -9,7 +9,7 @@ function Intervalo(props) {
 
     const { min, max } = props
     return (
-        <Card title='Intervalo de Números' red>
+        <Card title='Intervalo de Números' Red>
             <div className='Intervalo'>
                 <span>
                     <strong>Mínimo:</strong>
